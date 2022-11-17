@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>Document</title> 
+</head>
+<body>
+    <h1>This is all of our lead</h1>
+    <p>Here is our fake website</p>
+    <ul>
+        {% for lead in leads %}
+        <div class="lead"> 
+            <a href="/{{lead.pk}}/">{{ lead.first_name }}</a>.Age:{{ lead.age }}
+
+        </div>
+        {% endfor %}
+    </ul>
+    
+</body>
+
+</hmtl>
